@@ -1,0 +1,13 @@
+﻿@model ACOM.DocumentationSample.Models.DocumentationArticlesListModel
+@using ACOM.DocumentationSample.Helpers
+
+<h1>
+  @Model.PageTitle - @Model.Count Articles
+</h1>
+
+<ul>
+  @foreach (var article in Model.Articles.OrderBy(a=>a.ArticleTitle))
+  {
+    <li><a href="@Html.LocalizeUrl("/docs/")@article.Slug/">@article.ArticleTitle</a></li>
+  }
+</ul>

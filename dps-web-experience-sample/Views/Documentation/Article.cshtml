@@ -1,0 +1,46 @@
+﻿@model ACOM.DocumentationSample.Models.DocumentationArticleMetadataModel
+
+@{ 
+    ViewBag.Title = Model.ArticleTitle + "| Visual Studio";
+    ViewBag.CurrentMenu = "Documentation";
+}
+
+@* Add HTML meta tags from document metadata *@
+@section cp_head {
+    @foreach (var tag in Model.Tags)
+    {
+        <meta name="@tag.Key" content="@tag.Value" />
+    }
+}
+<div class="simpleLeftNav">
+
+    @Html.Action("TableOfContents", new { culture = Model.Culture, publishedVersion = Model.PublishedVersion, articleSlug = Model.Slug })
+
+    <div class="mainContent">
+        <div id="oaContent">
+            <div class="content">
+
+                <h1>
+                    @Model.ArticleTitle
+                </h1>
+                @if (Model.Tags != null && Model.Tags.Any(t => t.Key.Equals("ms.date")))
+            {
+                var date = Model.Tags.Where(t => t.Key.Equals("ms.date")).Select(t => t.Value).First();
+                DateTime datePosted;
+                if (DateTime.TryParse(date, out datePosted))
+                {
+                    if (!datePosted.Equals(DateTime.MinValue))
+                    {
+                            <p>
+                                Updated: @datePosted.ToShortDateString()
+                            </p>
+                        }
+                    }
+                }
+                @Html.Partial("Contributors", Model)
+                @Html.Raw(Model.Content)
+
+            </div>
+        </div>
+    </div>
+</div>

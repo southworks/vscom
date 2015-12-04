@@ -1,0 +1,37 @@
+﻿@model ACOM.DocumentationSample.Models.DocumentationArticleMetadataModel
+<div class="wa-githubContributors">
+    <span class="author-bio">
+        @if (Model.Contributors.Any())
+        {
+            <span class="author-content">
+                <span class="username">
+                    By
+                    <a href="@string.Format("https://github.com/{0}", Model.Contributors.First().Login)" target="_blank">
+                        @Model.Contributors.First().Name
+                    </a>
+                </span>
+            </span>
+        }
+    </span>
+
+    <div class="contributors">
+        @if (Model.Contributors.Count() > 1)
+        {
+            <div class="contribute">
+                <span>Contributors</span>
+            </div>
+
+            <ul>
+                @for (int i = 1; i < Model.Contributors.Count(); i++)
+                {
+                    <li>
+                        <a href="@string.Format("https://github.com/{0}", Model.Contributors.ElementAt(i).Login)" target="_blank">
+                            @Model.Contributors.ElementAt(i).Name
+                        </a>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+</div>
+

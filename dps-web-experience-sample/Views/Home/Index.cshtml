@@ -1,0 +1,705 @@
+﻿
+@{
+    ViewBag.Title = "Visual Studio - Microsoft Developer Tools";
+}
+
+<div id="VSSimple">
+    <div data-fragmentname="Title" id="Fragment_Title" xmlns="http://www.w3.org/1999/xhtml"></div>
+    <div data-fragmentname="Content" id="Fragment_Content" xmlns="http://www.w3.org/1999/xhtml">
+        <div class="RichText">
+            <style xmlns="">
+                .ios {
+                    background-color: rgba(142, 140, 141, 1);
+                    border-radius: 32.5px;
+                    color: rgba(217, 217, 217, 1);
+                    display: block;
+                    font-size: 28px;
+                    height: 65px;
+                    overflow: hidden;
+                    padding: 20px 0;
+                    text-align: center;
+                    vertical-align: middle;
+                    width: 65px;
+                    font-weight: 600;
+                }
+
+                .vsts_para {
+                    height: 75px !important;
+                }
+
+                .dev_essentials_para2 {
+                    width: 570px;
+                }
+
+                .dev_essentials_para strong {
+                    font-weight: 600;
+                }
+
+                .essentials_h2 {
+                    color: #505050 !important;
+                    font-size: 50px !important;
+                }
+
+                p.dev_essentials_para {
+                    color: #505050;
+                    font-size: 26px !important;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 630px;
+                    margin-left: -25px;
+                }
+
+                .bg-developerprogram {
+                    background-size: cover;
+                    background-image: url('/Content/images/dn469161.free_dev_program.jpg');
+                    height: 600px;
+                }
+
+                div#content {
+                    margin: -90px auto;
+                    width: 100%;
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+
+                /* Start VSSimple */
+
+
+
+                .text-center1 {
+                    margin-top: -40px;
+                    text-align: center;
+                }
+
+                .box2 {
+                    font-size: 24px;
+                    margin-top: 24px;
+                    font-family: segoe UI;
+                }
+
+                .box3 {
+                    color: RGB(255,189,1);
+                    font-family: segoe UI;
+                }
+
+
+                #connct {
+                    margin-left: -294px;
+                }
+
+                .hero h2 {
+                    margin-top: 16px !important;
+                }
+
+                #VSSimple {
+                    margin: 0;
+                    width: 100%;
+                    overflow: hidden;
+                }
+
+                    #VSSimple * {
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                    }
+
+                    #VSSimple .RichText {
+                        display: block;
+                    }
+
+                    #VSSimple img {
+                        margin-bottom: 0;
+                        max-width: none;
+                        border: none;
+                    }
+
+                    #VSSimple .swimlane h2,
+                    #VSSimple .hero h2,
+                    #VSSimple .swimlane-special h2 {
+                        color: #672079;
+                        margin-left: 0;
+                        font-weight: 300;
+                        font-size: 62px;
+                        margin-bottom: 24px;
+                        line-height: 1em;
+                        white-space: nowrap;
+                        font-family: 'Segoe UI Light', 'Segoe UI', Arial, Helvetica, sans-serif;
+                    }
+
+                        #VSSimple .swimlane h2 sup,
+                        #VSSimple .hero h2 sup,
+                        #VSSimple .swimlane-special h2 sup {
+                            font-size: .5em;
+                        }
+
+                    #VSSimple .hero h2 {
+                        color: #fff;
+                        margin-left: 0;
+                        line-height: 1.3em;
+                        font-weight: 300;
+                        font-size: 56px;
+                        white-space: nowrap;
+                        margin-bottom: 17px;
+                    }
+
+                    #VSSimple .swimlane-special h2 {
+                        color: #fff;
+                    }
+
+                    #VSSimple .swimlane-special h3 {
+                        color: #fff;
+                        font-size: 43px;
+                        font-family: 'Segoe UI Light', 'Segoe UI', Arial, Helvetica, sans-serif;
+                        line-height: 1em;
+                        white-space: nowrap;
+                    }
+
+                    #VSSimple h2 + h3 {
+                        margin-top: 0;
+                    }
+
+                    #VSSimple .swimlane p {
+                        font-size: 18px;
+                        line-height: 1.3em;
+                        margin-bottom: 25px;
+                    }
+
+                        #VSSimple .swimlane p.lead {
+                            font-size: 34px;
+                        }
+
+                    #VSSimple .swimlane h3 {
+                        margin-bottom: 31px;
+                        font-family: 'Segoe UI Light', 'Segoe UI', Arial, Helvetica, sans-serif;
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 24px;
+                    }
+
+                    #VSSimple .hero-box h3 {
+                        color: #672a7a;
+                        font-size: 34px;
+                        line-height: 1em;
+                        white-space: nowrap;
+                        margin-bottom: 20px;
+                    }
+
+                /* End VSSimple */
+
+                /* start common swim lanes */
+
+                .hero-box h3, .swimlaneTop a {
+                    color: #FFF !important;
+                }
+
+                .swimlane {
+                    padding: 40px 0;
+                    background-color: #000;
+                }
+
+                .swimlaneTop {
+                    color: #FFF;
+                }
+
+                .swimlane .content {
+                    width: 1160px;
+                    margin: -66px auto -48px;
+                    position: relative;
+                }
+
+                .swimlane .copy {
+                    width: 474px;
+                }
+
+                .swimlane .copy-right .copy {
+                    padding-left: 40px;
+                    float: right;
+                }
+
+                .swimlane .copy-left .copy {
+                    padding-right: 40px;
+                    float: left;
+                }
+
+
+                .swimlane a.link-button {
+                    background-color: #008a01;
+                    color: #fff;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    padding: 15px 30px;
+                    display: inline-block;
+                    border: 2px solid #fff;
+                }
+
+
+                    .swimlane a.link-button:hover {
+                        text-decoration: underline;
+                    }
+
+
+                .swimlane-special {
+                    color: #fff;
+                }
+
+                    .swimlane-special a,
+                    .swimlane-special a.link-arrow,
+                    .swimlane-special a.link-download {
+                        color: #fff;
+                    }
+
+                    .swimlane-special .copy {
+                        position: relative;
+                    }
+
+                    .swimlane-special .copy-right .copy {
+                        width: 600px;
+                        padding-left: 0;
+                        margin-left: 400px;
+                    }
+
+                /* end common swim lanes */
+
+                /* start specific swim lanes */
+
+
+                .swimlane-visualstudiorc {
+                    background-size: cover;
+                    background-image: url('/en-us/mt156982.bg-visualstudiorc.jpg');
+                    margin-top: -59px;
+                }
+
+                .swimlane-visualstudio {
+                    background-color: #e5e5e5;
+                    color: #000;
+                }
+
+                .bg-striped {
+                    color: #fff;
+                    background-size: cover;
+                    background-image: url('/Content/images/dn469161.enterprise_bg.jpg');
+                    height: 530px;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100% !important;
+                }
+
+                    .bg-striped a {
+                        color: #fff;
+                    }
+
+                .swimlane-visualstudioonline {
+                    background-size: cover;
+                    background-image: url('/Content/images/mt156982.bg_vsonline.jpg');
+                    height: 690px;
+                    background-color: #f5f3fd;
+                    background-position: 50% top;
+                    background-repeat: no-repeat;
+                }
+
+                .swimlane-visualstudiocode {
+                    height: 870px;
+                    background-color: #373277;
+                }
+
+                    .swimlane-visualstudiocode .image {
+                        position: relative;
+                        height: 425px;
+                    }
+
+                        .swimlane-visualstudiocode .image img {
+                            left: -180px;
+                            position: absolute;
+                        }
+
+                    .swimlane-visualstudiocode .text-disclaimer a {
+                        text-decoration: underline;
+                    }
+
+
+                /* end specific swim lanes */
+
+
+                /* start hero */
+
+                .hero {
+                    padding-top: 130px;
+                    padding-bottom: 55px;
+                    background-image: url('/Content/images/mt156982.homepage_hero_2.jpg');
+                    background-size: cover;
+                }
+
+
+                    .hero .content {
+                        width: 100%;
+                        margin: 0 auto;
+                        color: #fff;
+                    }
+
+                    .hero p.lead {
+                        font-size: 34px;
+                        font-weight: 300;
+                        font-family: 'Segoe UI Light', 'Segoe UI', Arial, Helvetica, sans-serif;
+                    }
+
+
+                .hero-box {
+                    width: 360px;
+                    float: left;
+                }
+
+                .hbox {
+                    margin-left: 40px;
+                }
+
+                .hero-box:first-child {
+                    padding-left: 0;
+                }
+
+                .hero-box:last-child {
+                    padding-right: 0;
+                }
+
+                #VSSimple .hero-box p {
+                    font-size: 15px;
+                }
+
+                    #VSSimple .hero-box p:first-of-type {
+                        height: 110px;
+                        font-size: 16px;
+                    }
+
+
+
+                /* end hero */
+
+                /* start helper styles */
+
+                .list-os-images {
+                    list-style: none;
+                    margin: 60px auto;
+                }
+
+                .list-os-images_dev_essentials {
+                    list-style: none;
+                    margin: 20px 100px;
+                    width: 400px;
+                }
+
+                    .list-os-images_dev_essentials img {
+                        margin-bottom: 0;
+                        max-width: 65px !important;
+                    }
+
+                .list-os-images li {
+                    display: inline-block;
+                    padding: 0 70px;
+                }
+
+                .list-os-images_dev_essentials li {
+                    display: inline-block;
+                    padding: 0px 20px;
+                }
+
+                .text-disclaimer {
+                    font-size: 10px;
+                    font-style: italic;
+                    text-align: left;
+                    margin-top: 13px !important;
+                    display: inline-block;
+                }
+
+                    .text-disclaimer a {
+                        text-decoration: underline;
+                    }
+
+
+                .text-center {
+                    text-align: center;
+                }
+
+                #VSSimple a.link-arrow,
+                #VSSimple a.link-download {
+                    text-decoration: none;
+                }
+
+                a.link-arrow:after,
+                a.link-download:after {
+                    content: "\203A";
+                    font-size: 2em;
+                    vertical-align: sub;
+                }
+
+                a.link-download:after {
+                    display: inline-block;
+                    height: 23px;
+                    width: 15px;
+                    padding-left: 5px;
+                    background-image: url('/Content/images/mt156982.icon_download_New.png');
+                    background-repeat: no-repeat;
+                    background-position: top right;
+                    content: "";
+                }
+
+                a.link-arrow:hover span,
+                a.link-download:hover span {
+                    text-decoration: underline;
+                }
+
+                #VSSimple .swimlane p.text-disclaimer {
+                    font-size: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .hiddenimages {
+                    display: none;
+                }
+
+                .cf:before,
+                .cf:after {
+                    content: " ";
+                    display: table;
+                }
+
+                .cf:after {
+                    clear: both;
+                }
+
+                .cf {
+                    *zoom: 1;
+                }
+                /* end helper styles */
+                .greenButton {
+                    background-color: #008000;
+                    padding: 15px 10px;
+                    display: inline-block;
+                    border: 2px solid #FFF;
+                    width: 280px !important;
+                    text-align: center;
+                    font-size: 18px;
+                    margin-top: 6px;
+                }
+
+                .contentSection2, .contentSection3, .contentSection4, .contentSection5, .contentSection6 {
+                    margin-top: 0px !important;
+                }
+
+                #connect {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 24px;
+                    font-family: "segoe UI", sans-serif;
+                }
+
+                .Hero_ribion {
+                    background-color: #5C2D91;
+                    background-image: url('/Content/images/dn469161.connct(msdn.10, en-us).png');
+                    background-repeat: no-repeat;
+                    height: 90px !important;
+                    width: 100% !important;
+                    background-position: 49% center !important;
+                    position: relative;
+                    top: -40px;
+                    left: 0px;
+                }
+
+                .box {
+                    width: 471px;
+                    height: 91px;
+                    position: relative;
+                    top: 13px;
+                    left: 270px;
+                    line-height: 27px;
+                    margin: 0px auto 0px auto !important;
+                }
+            </style>
+            <div class="hero" xmlns="">
+                <div class="content">
+                    <a href="https://www.visualstudio.com/connect2015" id="connect">
+                        <div class="Hero_ribion">
+                            <div class="box" id="connect">November 18-19 // Developer Virtual Event<br><strong style="color:#FFBD01;">Click here</strong> to find out more </div>
+                        </div>
+                    </a>
+
+                    <p class="text-center">
+                        <img id="vs_logo" alt="Visual Studio Logo" src="https://i3-vso.sec.s-msft.com/dynimg/IC806106.png" title="Visual Studio Logo">
+                    </p>
+                    <p>
+                    </p><h2 class="text-center">Tools for every developer and every app</h2>
+                </div>
+            </div>
+            <div class="swimlane swimlaneTop" xmlns="">
+                <div class="content">
+                    <div class="cf">
+                        <div class="hero-box hero-box-visualstudio">
+                            <h3>A powerful IDE</h3>
+                            <p>Create stunning apps for Windows, Android, iOS, and the web with a powerful integrated development environment.  <br><a class="link-arrow" href="https://www.visualstudio.com/products/visual-studio-community-vs" id="dn469161_hero_community_learnmore" title="Learn more"><span><strong>Learn about Visual Studio</strong></span></a></p>
+                            <p>
+                                <a class="greenButton" href="https://go.microsoft.com/fwlink/?LinkId=691978&amp;clcid=0x409" id="dn469161_hero_community" title="Download Community 2015">
+                                    <span>Download Community 2015</span>
+                                </a>
+                            </p>
+                            <p>
+                                <a class="link-arrow" href="https://www.visualstudio.com/vs-2015-product-editions" id="dn469161_hero_compare" title="Compare 2015 product editions">
+                                    <span>Compare 2015 product editions</span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="hero-box hero-box-visualstudioonline hbox">
+                            <h3>Services for teams</h3>
+                            <p class="vsts_para">Collaborate in the cloud with version control, agile, continuous delivery, app analytics — using any IDE or editor.  <br><a class="link-arrow" href="https://www.visualstudio.com/products/visual-studio-team-services-vs" id="dn469161_hero_vso" title="Learn more"><span><strong>Learn about Team Services</strong></span></a></p>
+                            <p style="margin-top:60px;">
+                                <a class="greenButton" href="https://go.microsoft.com/fwlink/?LinkId=307137&amp;clcid=0x409&amp;wt.mc_id=o~msft~vscom~getstarted-hero~dn469161&amp;campaign=o~msft~vscom~getstarted-hero~dn469161" id="dn469161_hero_getstarted_vso" title="Get started for free">
+                                    <span>Get started for free</span>
+                                </a>
+                            </p>
+                            <p>
+                                <a class="link-arrow" href="https://www.visualstudio.com/products/tfs-overview-vs" id="dn469161_hero_tfs" title="Host yourself with Team Foundation Server">
+                                    <span>Find out more about hosted services</span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="hero-box hero-box-visualstudiocode hbox">
+                            <h3>An editor for any OS</h3>
+                            <p>Build and debug modern web and cloud apps with a free code editor that runs on Windows, OS X, or Linux.  <br><a class="link-arrow" href="https://visualstudio.com/products/code-vs" id="dn469161_hero_code_learnmore" title="Learn more"><span><strong>Learn about Visual Studio Code</strong></span></a></p>
+                            <p>
+                                <a class=" greenButton os-current-link " href="https://go.microsoft.com/fwlink/?LinkID=534107" id="dn469161_hero_code_downloadwindows" title="Download">
+                                    <span>Download Code for <span class="os-current-name">Windows</span></span>
+                                </a>
+                            </p>
+                            <p>Download for  <a class="link-download os-second-link " href="https://go.microsoft.com/fwlink/?LinkID=534106" id="dn469161_hero_downloadmacOS" title="Download"><span><span class="os-second-name">Mac OS X</span></span></a> &nbsp; <a class="link-download os-third-link " href="https://go.microsoft.com/fwlink/?LinkID=534108" id="dn469161_hero_downloadlinux" title="Download"><span><span class="os-third-name">Linux</span></span></a><br><span class="text-disclaimer">By using VS Code, you agree to its  <a href="https://code.visualstudio.com/License" id="dn469161_hero_license" target="_blank">license</a> and <a href="https://www.visualstudio.com/en-us/dn948229" id="dn469161_hero_privacy" target="_blank">privacy statement</a>.</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swimlane swimlane-visualstudio bg-developerprogram" xmlns="">
+                <div class="content contentSection2" style="padding-left:55px;">
+                    <h2 class="essentials_h2">Visual Studio Dev Essentials</h2>
+                    <p class="dev_essentials_para" style="font-size:34px !important;text-align:center-justified;">Everything you need to build and deploy your app on any platform – for FREE.</p>
+                    <p class="text-center dev_essentials_para2">
+                        <a class="link-button text-center" href="https://my.visualstudio.com/Dashboard" id="dn469161_body_join" title="Join now">Join now</a>
+                        <br>
+                        <span class="text-disclaimer " style="margin-bottom:0px !important;">
+                            <a href="https://my.visualstudio.com/Dashboard" id="dn469161_acess_benefits">Sign in to access your benefits &gt;</a>
+                        </span>
+                    </p>
+                    <p class="text-center dev_essentials_para2">
+                        <a class="link-arrow" href="/" id="dn469161_body_learnmore_program">Learn more about the program&nbsp;</a>
+                    </p>
+                    <ul class="list-os-images_dev_essentials">
+                        <li>
+                            <img id="vccom_windows" alt="Windows " src="https://i3-vso.sec.s-msft.com/dynimg/IC806116.png" title="Windows ">
+                        </li>
+                        <li>
+                            <span class="ios">iOS</span>
+                            <div style="display:none;">
+                                <img id="vscom_apple" alt="iOS " src="https://i3-vso.sec.s-msft.com/dynimg/IC806118.png" title="iOS ">
+                            </div>
+                        </li>
+                        <li>
+                            <img id="android-65x65" alt="Android" src="https://i3-vso.sec.s-msft.com/dynimg/IC835286.png" title="Android">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swimlane swimlane-special bg-striped" xmlns="">
+                <div class="content text-center contentSection3">
+                    <h2>Visual Studio Enterprise 2015</h2>
+                    <p class="lead">Enterprise-grade solutions with advanced capabilities for teams working on projects of any size and complexity. </p>
+                    <p>
+                        <a class="link-arrow" href="https://www.visualstudio.com/products/visual-studio-enterprise-vs" id="dn469161_body_enterprise" title="Learn more">
+                            <span>Learn about Enterprise</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a class="link-arrow" href="https://www.visualstudio.com/vs-2015-product-editions" id="dn469161_body_compare" title="Compare Visual Studio 2015 product editions">
+                            <span>Compare Visual Studio 2015 product editions</span>
+                        </a>
+                    </p>
+                    <p style="margin-bottom:60px !important;">
+                        <a class="link-button " href="https://go.microsoft.com/fwlink/?LinkId=691979&amp;clcid=0x409" id="dn469161_body_downloadenterprise" title="Download Visual Studio Enterprise 2015">Download Enterprise 2015</a>
+                    </p>
+                </div>
+            </div>
+            <div class="swimlane swimlane-visualstudioonline" xmlns="">
+                <div class="content text-center contentSection4">
+                    <h2>Visual Studio Team Services</h2>
+                    <p class="lead">Share code, track work, and ship software.</p>
+                    <p>
+                        <a class="link-arrow" href="https://www.visualstudio.com/products/visual-studio-team-services-vs" id="dn469161_body_code" title="Learn more">
+                            <span>Learn about Team Services</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a class="link-arrow" href="https://www.visualstudio.com/products/tfs-overview-vs" id="dn469161_body_tfs" title="Host yourself with Team Foundation Server">
+                            <span>Host yourself with Team Foundation Server</span>
+                        </a>
+                    </p>
+                    <p style="margin-bottom:17px !important;">
+                        <a class="link-button " href="https://go.microsoft.com/fwlink/?LinkId=307137&amp;clcid=0x409&amp;wt.mc_id=o~msft~vscom~getstarted-body~dn469161&amp;campaign=o~msft~vscom~getstarted-body~dn469161" id="dn469161_body_vsosignup" title="Get started for free">Get started for free</a>
+                    </p>
+                </div>
+            </div>
+            <div class="swimlane swimlane-visualstudiocode swimlane-special" xmlns="">
+                <div class="content text-center contentSection5">
+                    <h2>Visual Studio Code  <sup>Beta</sup></h2>
+                    <p class="lead">Code editing redefined.</p>
+                    <p>
+                        <a class="link-arrow" href="https://visualstudio.com/products/code-vs" id="dn469161_body_code" title="Learn more">
+                            <span>Learn about Code</span>
+                        </a>
+                    </p>
+                    <p class="image">
+                        <img id="vscode_bg" alt="Visual Studio Code " src="https://i3-vso.sec.s-msft.com/dynimg/IC808721.png" title="Visual Studio Code ">
+                    </p>
+                    <p>
+                        <a class="link-button os-current-link " href="https://go.microsoft.com/fwlink/?LinkID=534107" id="dn469161_body_codedownload" title="Download">Download Code for <span class="os-current-name">Windows</span></a>
+                        <br>
+                        <span class="text-disclaimer">Visual Studio Code is available on  <a href="https://go.microsoft.com/fwlink/?LinkID=534106" id="dn469161_body_codemacos">Mac OS X</a>, <a href="https://go.microsoft.com/fwlink/?LinkID=534108" id="dn469161_body_codelinux">Linux</a>, and <a href="https://go.microsoft.com/fwlink/?LinkID=534107" id="dn469161_body_codewinsmall">Windows</a>.</span>
+                        <br>
+                        <span class="text-disclaimer">By using VS Code, you agree to its  <a href="https://code.visualstudio.com/License" id="dn469161_body_license" target="_blank">license</a> and <a href="https://www.visualstudio.com/en-us/dn948229" id="dn469161_body_privacy" target="_blank">privacy statement</a>.</span>
+                    </p>
+                    <span class="text-disclaimer"></span>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div class="swimlane swimlane-visualstudio" xmlns="">
+                <div class="content text-center contentSection2" style="margin-bottom:55px ! important;">
+                    <h2>Visual Studio Community 2015</h2>
+                    <p class="lead blackLead">Create multi-platform apps for Windows, iOS, Android,  <br>and more by using a single IDE.</p>
+                    <p>
+                        <a class="link-arrow" href="https://www.visualstudio.com/products/vs-2015-product-editions" id="dn469161_body_learnmore_community">Learn about Community</a>
+                    </p>
+                    <ul class="list-os-images">
+                        <li>
+                            <img id="iOS-2" alt="ios" src="https://i3-vso.sec.s-msft.com/dynimg/IC835532.png" title="ios">
+                        </li>
+                        <li>
+                            <img id="vccom_windows" alt="Windows " src="https://i3-vso.sec.s-msft.com/dynimg/IC806116.png" title="Windows ">
+                        </li>
+                        <li>
+                            <img id="vscom_droid" alt="Android " src="https://i3-vso.sec.s-msft.com/dynimg/IC806117.png" title="Android ">
+                        </li>
+                    </ul>
+                    <p>
+                        <a class="link-button " href="https://go.microsoft.com/fwlink/?LinkId=691978&amp;clcid=0x409" id="dn469161_body_community" title="Download Visual Studio Community 2015">Download Community 2015</a>
+                        <br>
+                        <span class="text-disclaimer " style="margin-bottom:17px !important;">
+                            <a href="https://www.visualstudio.com/en-us/support/legal/mt171547" id="dn469161_disclaimer_community">Free for students, open-source contributors, and small teams</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="myconnect" xmlns="">
+                <div class="content text-center contentSection5"></div>
+            </div>
+            <div class="hiddenimages" xmlns="">
+                <img id="homepage_hero_2" alt="Hero Banner " src="https://i3-vso.sec.s-msft.com/dynimg/IC820764.jpg" title="Hero Banner ">&nbsp; <img id="vsent_bg" alt="BG " src="https://i3-vso.sec.s-msft.com/dynimg/IC806114.jpg" title="BG "><img id="hero_bg" alt="bg " src="https://i3-vso.sec.s-msft.com/dynimg/IC806104.jpg" title="bg "><img id="bg-visualstudiorc" alt="bg " src="https://i3-vso.sec.s-msft.com/dynimg/IC806115.jpg" title="bg "><img id="bg_vsonline" alt="VS Online BG " src="https://i3-vso.sec.s-msft.com/dynimg/IC806120.jpg" title="VS Online BG "><img id="icon_download" alt="Download " src="https://i3-vso.sec.s-msft.com/dynimg/IC806121.png" title="Download "><img id="icon_download_N" alt="Download " src="https://i3-vso.sec.s-msft.com/dynimg/IC820111.png" title="Download ">&nbsp; <img id="icon_download_New" alt="Download " src="https://i3-vso.sec.s-msft.com/dynimg/IC820129.png" title="Download ">&nbsp; <img id="connct" src="https://i3-vso.sec.s-msft.com/dynimg/IC834592.png"><img id="free_dev_program" alt="freedev" src="https://i3-vso.sec.s-msft.com/dynimg/IC838050.jpg" title="freedev">&nbsp; <img id="enterprise_bg" alt="BG" src="https://i3-vso.sec.s-msft.com/dynimg/IC836178.jpg" title="BG">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,1214 @@
+/*DPS Conversion styles*/
+.doc-article {
+  /*VS.com migrated styles*/
+  /* Home and Get Started pages */
+}
+.doc-article .wa-githubContributors {
+  display: none;
+}
+.doc-article .wa-navigationScroll,
+.doc-article .wa-githubContributors {
+  position: absolute;
+  margin-left: 871px;
+  width: 100%;
+}
+.doc-article .wa-navigationScroll span,
+.doc-article .wa-githubContributors span {
+  margin-bottom: 6px;
+}
+.doc-article .wa-navigationScroll ul,
+.doc-article .wa-githubContributors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.doc-article .wa-navigationScroll ul li,
+.doc-article .wa-githubContributors ul li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  border-left: 3px solid #eee;
+  margin: 0 0 1px 0;
+  padding: 2px 10px;
+  position: relative;
+}
+.doc-article .wa-navigationScroll ul li li,
+.doc-article .wa-githubContributors ul li li {
+  margin-top: 10px;
+}
+.doc-article .wa-navigationScroll ul li:first-child,
+.doc-article .wa-githubContributors ul li:first-child {
+  border-top: 1px solid #fff;
+}
+.doc-article .wa-navigationScroll ul li.active,
+.doc-article .wa-githubContributors ul li.active {
+  border-left: 3px solid #89c402;
+}
+.doc-article .wa-navigationScroll ul li.active a,
+.doc-article .wa-githubContributors ul li.active a {
+  font-weight: 600;
+}
+.doc-article .wa-navigationScroll a,
+.doc-article .wa-githubContributors a {
+  font-size: 12px;
+  line-height: 1.2em;
+}
+.doc-article html {
+  font-size: 100%;
+}
+.doc-article body {
+  color: #333;
+  cursor: default;
+  line-height: 20px;
+  font-family: 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-size: .8125em;
+  margin: 0;
+}
+.doc-article a {
+  color: #04c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.doc-article a:hover,
+.doc-article a:focus {
+  text-decoration: none;
+}
+.doc-article img {
+  border: none;
+  max-width: 100%;
+}
+.doc-article ul,
+.doc-article ol,
+.doc-article li,
+.doc-article p {
+  margin: 0;
+  padding: 0;
+}
+.doc-article ul {
+  margin-bottom: 18px;
+}
+.doc-article ul li {
+  margin-left: 15px;
+  margin-bottom: 2px;
+}
+.doc-article ol li {
+  margin-left: 18px;
+  margin-bottom: 2px;
+}
+.doc-article p {
+  margin-bottom: 10px;
+}
+.doc-article h1,
+.doc-article h2,
+.doc-article h3 {
+  margin: 0;
+  color: #68217a;
+  font-weight: normal;
+}
+.doc-article h1 {
+  font-size: 2.77em;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.doc-article h2 {
+  font-size: 2.16em;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.doc-article h3 {
+  font-size: 1.39em;
+  font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.doc-article h4 {
+  font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.08em;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+.doc-article blockquote {
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 14px;
+  border-left: 5px solid #00bcf2;
+  background-color: #eff6fb;
+}
+.doc-article .clear {
+  clear: both;
+}
+.doc-article h1:target,
+.doc-article h2:target,
+.doc-article h3:target,
+.doc-article div:target,
+.doc-article p:target,
+.doc-article a:target,
+.doc-article #content .simpleLeftNav .mainContent h2:target {
+  margin-top: -102px;
+  padding-top: 102px;
+}
+.doc-article div#content {
+  margin: 30px auto 130px;
+  width: 1160px;
+  padding: 68px 10px 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.doc-article div#content .mainContent table {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.doc-article div#content .mainContent table td.subheader {
+  background-color: #eee;
+}
+.doc-article div#content .mainContent table > tbody > tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.doc-article div#content .mainContent table > thead > tr > th,
+.doc-article div#content .mainContent table > tbody > tr > th,
+.doc-article div#content .mainContent table > tfoot > tr > th,
+.doc-article div#content .mainContent table > thead > tr > td,
+.doc-article div#content .mainContent table > tbody > tr > td,
+.doc-article div#content .mainContent table > tfoot > tr > td {
+  line-height: 16px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.doc-article div#content .mainContent table > thead > tr > th,
+.doc-article div#content .mainContent table > thead > tr > td {
+  border-width: 1px;
+}
+@media print {
+  .doc-article #ux-header,
+  .doc-article #ux-footer,
+  .doc-article .socialLinks,
+  .doc-article .leftNavigation {
+    display: none;
+  }
+  .doc-article div#content {
+    padding-top: 0;
+  }
+}
+.doc-article #ux-header {
+  min-width: 1160px;
+  width: 100%;
+  font-size: 1.077em;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+}
+.doc-article #ux-header a {
+  color: #fff;
+}
+.doc-article #ux-header ul {
+  margin-bottom: 0;
+}
+.doc-article #ux-header li {
+  margin: 0;
+}
+.doc-article #ux-header ul.dev-navigation {
+  padding: 0;
+  overflow: visible;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  margin-left: -15px;
+}
+.doc-article #ux-header ul.dev-navigation a:focus {
+  outline: dotted 1px #fff;
+}
+.doc-article #ux-header ul.dev-navigation > li.nav-expander > a {
+  border-bottom: 4px solid #333;
+  margin: 0 15px;
+  line-height: 30px;
+  font-size: .92857em;
+}
+.doc-article #ux-header ul.dev-navigation > .nav-expander.active > a {
+  color: #6dc2e9;
+  border-top: 0;
+  border-bottom: 4px solid #6dc2e9;
+}
+.doc-article #ux-header div.upperBandContent .left {
+  float: left;
+  padding: 10px 0 9px 0;
+  height: 15px;
+}
+.doc-article #ux-header div.upperBandContent .right {
+  float: right;
+  padding: 10px 43px 0 0;
+  position: relative;
+}
+.doc-article #ux-header .right a {
+  font-size: .6875rem;
+  font-size: 11px;
+  padding-top: 1px;
+}
+.doc-article #ux-header div.upperBand {
+  line-height: 14px;
+  color: #fff;
+  height: 34px;
+  background-color: #000;
+}
+.doc-article #ux-header div.upperBand div.right a.scarabLink {
+  margin-left: 23px;
+}
+.doc-article #ux-header div.upperBand #Fragment_SiteLogoLink {
+  padding: 0;
+}
+.doc-article #ux-header div.upperBand #Fragment_SiteLogoLink > a {
+  display: inline-block;
+  text-indent: -9999px;
+}
+.doc-article #ux-header div.upperBand #Fragment_SiteLogoLink > a:before {
+  content: " ";
+  display: block;
+  float: left;
+  width: 100px;
+}
+.doc-article #ux-header div.upperBand a.createProfileLink {
+  float: left;
+  margin-left: 23px;
+  margin-right: 0;
+  max-width: 530px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+.doc-article #ux-header div.upperBand #orgIdImage {
+  float: left;
+  margin-left: 6px;
+  margin-top: -2px;
+  display: inline-block;
+}
+.doc-article #ux-header div.upperBand #Fragment_SearchBox div.SearchBox {
+  margin: 0;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.doc-article #ux-header div.lowerBand {
+  line-height: 18px;
+  color: #fff;
+  background-color: #333;
+  height: 34px;
+}
+.doc-article #ux-header div.lowerBand #Fragment_HeaderToc {
+  display: inline-block;
+  float: left;
+  max-width: 730px;
+}
+.doc-article #ux-header div.lowerBand #Fragment_GetStartedLink {
+  background-color: #008a00;
+  float: right;
+  max-width: 250px;
+}
+.doc-article #ux-header div.lowerBand #Fragment_GetStartedLink a {
+  line-height: 34px;
+  font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  padding: 0 32px 0 20px;
+  display: table-cell;
+  vertical-align: middle;
+  background: url('Images/arrowWhite.png?v=635823573589483492') no-repeat right center;
+  border-right: 20px solid #008a00;
+}
+.doc-article #ux-header #Fragment_SearchBox {
+  width: auto;
+  display: inline-block;
+  height: 31px;
+  margin: -7px 0 0 27px;
+  position: absolute;
+  right: 0;
+}
+.doc-article #ux-header #Fragment_SearchBox .SearchBox form {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  position: absolute;
+  border: none;
+}
+.doc-article #ux-header #Fragment_SearchBox .SearchBox form input#HeaderSearchTextBox {
+  position: relative;
+  height: 27px;
+  width: 275px;
+  padding: 3px 10px;
+  margin: 0;
+  float: left;
+  background-color: #6a6a6a;
+  color: #fff;
+  font-size: 1.077em;
+  border: solid 1px #505050;
+  font-style: normal !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.doc-article #ux-header #Fragment_SearchBox #SearchFlyoutContainer {
+  color: #000 !important;
+  padding: 3px 10px !important;
+  width: 252px !important;
+  margin-left: 0;
+}
+.doc-article #ux-header #Fragment_SearchBox #SearchFlyoutContainer #SuggestionContainer {
+  width: 252px;
+  margin-left: 0;
+}
+.doc-article #ux-header #Fragment_SearchBox #HeaderSearchForm {
+  display: none;
+}
+.doc-article #ux-header div.SearchBoxOnFocus input#HeaderSearchTextBox {
+  color: #f2f2f2 !important;
+}
+.doc-article #ux-header .dev-navigation {
+  float: left;
+  clear: left;
+  padding-right: 10px;
+}
+.doc-article #ux-header .dev-navigation li {
+  float: left;
+  list-style: none;
+  line-height: 18px;
+}
+.doc-article #ux-header .dev-navigation li a {
+  margin: 0 24px 0 0;
+  display: block;
+  outline: none;
+}
+.doc-article #ux-header .dev-navigation a {
+  margin: 0;
+  padding: 0;
+}
+.doc-article #ux-header .nav-expander-div {
+  background-color: #d2d2d2;
+  width: 980px;
+  display: none;
+  position: absolute;
+  left: 15px;
+  border-bottom: 1px solid #505050;
+}
+.doc-article #ux-header .nav-expander-div > div {
+  overflow: hidden;
+}
+.doc-article #ux-header .nav-expander-div > div > ul {
+  background-color: #969696;
+  float: left;
+  width: 21.42857142857143%;
+  padding: 20px 0 20px 0;
+}
+.doc-article #ux-header .nav-expander-div > div > ul > li {
+  float: none;
+}
+.doc-article #ux-header .nav-expander-div > div > ul > li > a {
+  display: block;
+  padding: 5px 10px 7px 20px;
+  text-transform: capitalize;
+  width: 100%;
+  color: #000;
+  border-bottom: 6px solid #969696;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.doc-article #ux-header .nav-expander-div > div > ul > li > a > span {
+  display: inline-block;
+  width: 90%;
+}
+.doc-article #ux-header .nav-expander-div > div > ul > li > a:hover {
+  border-bottom: 6px solid #969696;
+}
+.doc-article #ux-header .nav-expander-div > div > ul > li > a.current {
+  color: #6dc2e9;
+}
+.doc-article #ux-header .nav-expander-div > div > ul > li.nav-has-submenu > a:after {
+  content: " ";
+  display: block;
+  float: right;
+  margin-top: 6px;
+}
+.doc-article #ux-header .nav-expander-div > ul > li {
+  font-weight: bold;
+  color: #fff;
+  float: none;
+}
+.doc-article #ux-header .active .nav-expander-div {
+  display: block;
+}
+.doc-article #ux-header .nav-submenu {
+  top: 0;
+  position: absolute;
+  left: 210px;
+  display: none;
+  background-color: #d2d2d2;
+  width: 76.53061224489796%;
+  min-height: 100px;
+  padding: 25px 0 15px 20px;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+.doc-article #ux-header .nav-submenu .ListOfLinkLists {
+  display: inline-block;
+  width: 100%;
+}
+.doc-article #ux-header .nav-submenu .linkList {
+  max-width: 230px;
+  width: 30.66748446625243%;
+  margin-left: 20px;
+  float: left;
+}
+.doc-article #ux-header .nav-submenu .linkList li a {
+  color: #000;
+  text-transform: none;
+  display: inline;
+  line-height: 18px;
+  padding-left: 0;
+}
+.doc-article #ux-header .nav-submenu .linkList ul.links > li > a {
+  display: block;
+  margin-bottom: 11px;
+}
+.doc-article #ux-header .nav-submenu .linkListTitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Segoe UI bold", 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+.doc-article #ux-header .nav-submenu.active {
+  display: block;
+}
+.doc-article #ux-header div.upperBandContent,
+.doc-article #ux-header div.lowerBandContent {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.doc-article #ux-header div.upperBand div.right div,
+.doc-article #ux-header div.upperBand div.right a.scarabLink {
+  float: left;
+}
+.doc-article #ux-header.vsIntegrate div.upperBand #Fragment_SiteLogoLink > a {
+  text-indent: 0;
+  font-size: 16px;
+}
+.doc-article #ux-header.vsIntegrate div.upperBand #Fragment_SiteLogoLink > a:before {
+  width: 134px;
+}
+.doc-article #ux-header #Fragment_SearchBox .SearchBox .metroSearchButton,
+.doc-article #ux-header #Fragment_SearchBox .SearchBox button {
+  display: inline-block;
+  height: 31px;
+  width: 34px;
+  background: url('Images/searchDefault.png?v=635823573590577243') no-repeat right 6px #000;
+  float: right;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  border: none;
+}
+.doc-article #ux-header.FF #Fragment_SearchBox .SearchBox a.metroSearchButton:focus {
+  border: 1px dotted #fff;
+  height: 25px;
+  width: 30px;
+}
+.doc-article #ux-header.Safari #Fragment_SearchBox .SearchBox a.metroSearchButton:focus {
+  border: 1px dotted #fff;
+  height: 25px;
+  width: 30px;
+}
+.doc-article #ux-header #Fragment_SearchBox .SearchBox .metroSearchButton:hover,
+.doc-article #ux-header #Fragment_SearchBox .SearchBox button {
+  background: url('Images/searchOnFocus.png?v=635823573590577243') no-repeat right 6px #000;
+}
+.doc-article #ux-header .dev-navigation li a:hover,
+.doc-article #ux-header .dev-navigation li a.current {
+  color: #6dc2e9;
+  text-decoration: solid;
+}
+#ux-header ul.dev-navigation .doc-article > li.nav-expander .doc-article > a:hover,
+#ux-header ul.dev-navigation .doc-article > li.nav-expander .doc-article > a.current {
+  border-bottom: 4px solid #6dc2e9;
+}
+.doc-article #ux-header.fr-fr .nav-expander > a {
+  font-size: .625em;
+}
+#ux-header .nav-expander-div .doc-article > div .doc-article > ul .doc-article > li .doc-article > a:hover,
+#ux-header .nav-expander-div .doc-article > div .doc-article > ul .doc-article > li .doc-article > a.active {
+  background-color: #333;
+  color: #6dc2e9;
+}
+#ux-header .nav-submenu .linkList ul.links .doc-article > li,
+.doc-article #ux-header .nav-submenu .linkListTitle {
+  float: none;
+  line-height: 18px;
+  color: #000;
+}
+.doc-article #ux-footer {
+  background-color: #eee;
+  margin: 0;
+  font-size: .85em;
+  font-family: 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  min-width: 1160px;
+  width: 100%;
+}
+.doc-article #ux-footer .rating {
+  display: none;
+}
+.doc-article #ux-footer #footerSock .rating {
+  display: block;
+}
+.doc-article #ux-footer a {
+  color: #04c;
+  line-height: 20px;
+}
+.doc-article #ux-footer .footerContainer {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.doc-article #ux-footer #fourColumnFooter {
+  display: inline-block;
+  width: 100%;
+  margin-top: 43px;
+}
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column1 {
+  margin: 0 0 42px 0;
+}
+.doc-article #ux-footer #fourColumnFooter .linkList {
+  margin: 0 0 39px 0;
+}
+.doc-article #ux-footer #fourColumnFooter .linkList:first-child {
+  display: inline-block;
+}
+.doc-article #ux-footer #fourColumnFooter div.LinkWithImage {
+  display: inline-block;
+  margin-bottom: 3px;
+  width: 100%;
+}
+.doc-article #ux-footer #fourColumnFooter div.LinkWithImage a {
+  display: inline-block;
+  line-height: 22px;
+  padding-bottom: 2px;
+  color: #000;
+}
+.doc-article #ux-footer #fourColumnFooter div.LinkWithImage img {
+  border: none;
+  margin-right: 10px;
+  margin-bottom: -10px;
+}
+.doc-article #ux-footer #baseFooter {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0 38px 0;
+}
+.doc-article #ux-footer #baseFooter #leftBaseFooter {
+  float: left;
+  width: 23.46938775510204%;
+  font-size: 1.182em;
+  margin-right: 20px;
+}
+.doc-article #ux-footer #baseFooter #leftBaseFooter .selectLocale a {
+  color: #000;
+  font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  line-height: 22px;
+  padding: 3px 0 4px 0;
+}
+.doc-article #ux-footer #baseFooter #leftBaseFooter .selectLocale a:before {
+  content: " ";
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.doc-article #ux-footer #baseFooter #Fragment_BaseFooterLinks {
+  float: left;
+  width: 51.02040816326531%;
+}
+.doc-article #ux-footer #baseFooter #Fragment_BaseFooterLinks li {
+  display: inline-block;
+  list-style-type: none;
+}
+.doc-article #ux-footer #baseFooter #Fragment_BaseFooterLinks a {
+  margin: 0 15px 0 0;
+}
+.doc-article #ux-footer #baseFooter #rightBaseFooter {
+  float: right;
+  width: 23.46938775510204%;
+  color: #000;
+}
+.doc-article #ux-footer span.microsoftLogo {
+  display: inline-block;
+  margin-left: 16px;
+}
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column1,
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column2,
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column3,
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column4 {
+  float: left;
+  width: 23.46938775510204%;
+}
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column2,
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column3,
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column4 {
+  margin-left: 20px;
+}
+.doc-article #ux-footer #fourColumnFooter .linkListTitle,
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column1 .listTitle {
+  line-height: 22px;
+}
+.doc-article #ux-footer #fourColumnFooter .linkList ul.links,
+.doc-article #ux-footer #fourColumnFooter div.LinkWithImage {
+  margin: 9px 0 0 0;
+  color: #0072c6;
+  line-height: 20px;
+}
+.doc-article #ux-footer #fourColumnFooter .linkListTitle,
+.doc-article #ux-footer #fourColumnFooter #Fragment_Column1 {
+  color: #000;
+}
+.doc-article body.IE8 #ux-footer #baseFooter {
+  margin-top: 48px;
+}
+.doc-article div#ux-footer .left {
+  float: left;
+}
+.doc-article div#ux-footer .right {
+  float: right;
+}
+.doc-article div#ux-footer .clear {
+  clear: both;
+}
+.doc-article div#ux-footer div#footerSock div#footerSockInner {
+  width: 980px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.doc-article div#ux-footer div#footerSock div#footerSockInner div.rating {
+  margin-left: 250px;
+}
+.doc-article div#footerSock {
+  background-color: #d2d2d2;
+  color: #000;
+  line-height: 16px;
+}
+.doc-article div#footerSock div#footerSockInner {
+  width: 1180px;
+  margin: auto;
+}
+.doc-article div#footerSock div#footerSockInner div.userVoice {
+  min-width: 231px;
+  width: 27%;
+}
+.doc-article div#footerSock div#footerSockInner div.userVoice div.description {
+  margin-bottom: 32px;
+}
+.doc-article div#footerSock div#footerSockInner div.userVoice > div.buttons > .button {
+  padding: 4px 18px 8px 18px;
+}
+.doc-article div#footerSock div#footerSockInner div.rating {
+  min-width: 290px;
+  width: 38%;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div.description {
+  margin-bottom: 26px;
+}
+.doc-article div#footerSock div#footerSockInner div.rating textarea {
+  margin-bottom: 6px;
+  width: 95%;
+  height: 160px;
+  border: 0;
+  resize: none;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div#ratingSection2 {
+  width: 460px;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div#ratingSection2 div.title {
+  margin: 0 0 15px 0;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div#ratingSection2 div.counter {
+  font-size: 14px;
+  color: #505050;
+  padding: 0 5%;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div#ratingSection2 div.buttons {
+  margin-top: 8px;
+}
+.doc-article div#footerSock * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.doc-article div#footerSock *:before,
+.doc-article div#footerSock *:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.doc-article div#footerSock div#footerSockInner div.rating,
+.doc-article div#footerSock div#footerSockInner div.userVoice {
+  margin: 27px 0 32px 25%;
+  float: left;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div.buttons,
+.doc-article div#footerSock div#footerSockInner div.userVoice div.buttons {
+  margin-top: 10px;
+  min-width: 150px;
+}
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > div,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > div {
+  display: inline-block;
+}
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > .button,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > .button,
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > div .doc-article > .button,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > div .doc-article > .button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  border: none;
+  background-color: #00bcf2;
+  color: #000;
+  margin: 0 10px 0 0;
+}
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > .button:hover,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > .button:hover,
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > div .doc-article > .button:hover,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > div .doc-article > .button:hover {
+  background-color: #000;
+  color: #fff;
+}
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > .button:focus,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > .button:focus,
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > div .doc-article > .button:focus,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > div .doc-article > .button:focus {
+  outline: 1px dotted #000;
+  border: none;
+}
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > .button::-moz-focus-inner,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > .button::-moz-focus-inner,
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > div .doc-article > .button::-moz-focus-inner,
+div#footerSock div#footerSockInner div.userVoice div.buttons .doc-article > div .doc-article > .button::-moz-focus-inner {
+  border: 0;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div.title,
+.doc-article div#footerSock div#footerSockInner div.userVoice div.title {
+  line-height: 20px;
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+  clear: none;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div.description,
+.doc-article div#footerSock div#footerSockInner div.userVoice div.description {
+  font-size: 14px;
+}
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > .button,
+div#footerSock div#footerSockInner div.rating div.buttons .doc-article > div .doc-article > .button {
+  padding: 7px 18px;
+}
+.doc-article div#footerSock div#footerSockInner div.rating div#ratingSection2,
+.doc-article div#footerSock div#footerSockInner div.rating div#ratingSection3 {
+  display: none;
+}
+.doc-article div#footerSock.both div#footerSockInner div.rating,
+.doc-article div#footerSock.both div#footerSockInner div.userVoice {
+  margin-left: 0;
+  width: 50%;
+}
+.doc-article div#footerSock.librarySock div#footerSockInner {
+  width: 97%;
+}
+.doc-article body:not(.FF) div#ux-footer div#footerSock.both div.userVoice > div.buttons > .button {
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+.doc-article #Fragment_Content img,
+.doc-article .mainContent img {
+  border: 1px solid #ccc;
+  margin-bottom: 14px;
+  max-width: 100%;
+}
+.doc-article #Fragment_Content p.no-img-border img,
+.doc-article .mainContent p.no-img-border img {
+  border: none;
+}
+.doc-article .upperBand #Fragment_SiteLogoLink > a:before {
+  background: url('images/ImageSprite.png') no-repeat scroll -251px 0;
+  width: 117px;
+  height: 15px;
+  overflow: hidden;
+}
+.doc-article #proxyUrl,
+.doc-article #authHeader,
+.doc-article #playgroundUrl {
+  display: none;
+}
+.doc-article .selectLocale a:before {
+  background: url('images/ImageSprite.png') no-repeat scroll -70px 0;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+}
+.doc-article .microsoftLogo {
+  background: url('images/ImageSprite.png') no-repeat scroll -93px 0;
+  width: 68px;
+  height: 14px;
+  overflow: hidden;
+}
+.doc-article .metroSearchButton {
+  background: url('images/ImageSprite.png') no-repeat scroll -195px 0;
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+}
+.doc-article .metroSearchButton:hover,
+.doc-article div.SearchBoxOnFocus button {
+  background: url('images/ImageSprite.png') no-repeat scroll -215px 0;
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+}
+.doc-article .linkList > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.doc-article .linkList > ul > li {
+  list-style-type: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.doc-article .linkList ul.horizontal > li {
+  float: left;
+}
+.doc-article div.TocNavigationVertical {
+  margin-bottom: 10px;
+}
+.doc-article div.TocNavigationVertical ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.doc-article div.TocNavigationVertical ul li a.active {
+  color: #68217a;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel1 > li {
+  border-bottom: solid 1px #d2d2d2;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 7px 0 7px 0;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel1 > li > a {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.231em;
+  line-height: 20px;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel1 > li > a.normal + ul.tocLevel2 {
+  display: none;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel2 {
+  display: inline-block;
+  margin-top: 15px;
+  padding-bottom: 2px;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel2 li {
+  margin-bottom: 12px;
+  line-height: 18px;
+  margin-left: 0;
+  width: 220px;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel2 li a {
+  font-size: 1.077em;
+  color: #505050;
+  padding-left: 15px;
+  line-height: 18px;
+  display: inline-block;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel2 li a.active {
+  background: url('images/squarePurple_5x5.png') no-repeat left center;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel2 > li > a.normal + ul.tocLevel3 {
+  display: none;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel3 {
+  display: inline-block;
+  margin-top: 15px;
+  padding-bottom: 2px;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel3 li {
+  margin-bottom: 12px;
+  line-height: 18px;
+  margin-left: 8px;
+  width: 212px;
+}
+.doc-article div.TocNavigationVertical ul.tocLevel3 li a {
+  font-size: .957em;
+  color: #505050;
+  padding-left: 16px;
+  line-height: 16px;
+  display: inline-block;
+}
+.doc-article #content .simpleLeftNav #Fragment_Content img,
+.doc-article #content .simpleLeftNav .Content img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.doc-article #content .simpleLeftNav #Fragment_Content li img,
+.doc-article #content .simpleLeftNav .Content li img {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+#content .simpleLeftNav #Fragment_Content li p .doc-article > img,
+#content .simpleLeftNav .Content li p .doc-article > img {
+  margin-bottom: 5px;
+}
+.doc-article #content .simpleLeftNav {
+  display: inline-block;
+  width: 100%;
+}
+.doc-article #content .simpleLeftNav p.answer {
+  margin-bottom: 15px;
+}
+.doc-article #content .simpleLeftNav p.answer span:first-child {
+  margin-left: -20px;
+}
+.doc-article #content .simpleLeftNav h2 {
+  font-size: 1.85em;
+  color: #505050;
+  line-height: 30px;
+}
+.doc-article #content .simpleLeftNav h3 {
+  color: #505050;
+}
+.doc-article #content .simpleLeftNav .mainContent {
+  width: 74.48979591836735%;
+  float: right;
+  margin: 0;
+}
+.doc-article #content .simpleLeftNav .mainContent h3.answer {
+  color: #333;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.doc-article #content .simpleLeftNav .mainContent h2 {
+  margin-bottom: 15px;
+  margin-top: 26px;
+}
+.doc-article #content .simpleLeftNav .mainContent h3 {
+  margin-top: 30px;
+}
+.doc-article #content .simpleLeftNav .mainContent .RichText ol:last-child li:last-child img:last-child {
+  margin-bottom: 0;
+}
+.doc-article #content .simpleLeftNav #Fragment_Content .RichText ol:not(:last-child) li:last-child img:last-child {
+  margin-bottom: 0;
+}
+.doc-article #content .simpleLeftNav .socialLinks {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.doc-article #content .simpleLeftNav div.answer {
+  padding-left: 20px;
+}
+.doc-article #content .simpleLeftNav p.question {
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+.doc-article #content .simpleLeftNav p.question span:first-child {
+  margin-left: -20px;
+}
+.doc-article #content .simpleLeftNav .question {
+  padding-left: 20px;
+}
+.doc-article div.leftNavigation {
+  float: left;
+  width: 22.44897959183673%;
+  margin: 0px 29px 0 0;
+}
+.doc-article #content .leftNavigation.affix,
+.doc-article #content .leftNavigation.affix-top,
+.doc-article #content .leftNavigation.affix-bottom {
+  width: 220px;
+}
+.doc-article #content .simpleLeftNav p.answer.Code,
+.doc-article #content .simpleLeftNav p.answer + img {
+  padding-left: 0;
+  margin-left: 20px;
+}
+.doc-article #VSSimple img {
+  vertical-align: baseline;
+}
+.doc-article #VSSimple .lead {
+  font-weight: normal;
+}
+.doc-article #VSSimple sup {
+  position: relative;
+  line-height: 62px;
+  vertical-align: super;
+  top: 0;
+}
+.doc-article #VSSimple * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.doc-article #VSSimple *:before,
+.doc-article #VSSimple *:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.doc-article .topSection {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+.doc-article .topSection .introduction {
+  display: inline-block;
+  width: 74.48979591836735%;
+  margin-right: 20px;
+  float: left;
+}
+.doc-article div.topSection div.topCTA {
+  clear: both;
+  width: 23.46938775510204%;
+  display: inline-block;
+  margin: 10px 0 15px 0;
+}
+.doc-article div.topSection div.topCTA h4 {
+  color: #fff;
+}
+.doc-article div.topSection div.topCTA div.DetailedLinkWithImageMetro a.tile {
+  display: inline-block;
+  color: #fff;
+  background: #68217a;
+  clear: right;
+}
+.doc-article div.topSection div.topCTA div.DetailedLinkWithImageMetro img {
+  width: 100%;
+  border: none;
+  height: 100px;
+}
+.doc-article div.topSection div.topCTA div.DetailedLinkWithImageMetro .textContent {
+  padding: 15px 20px 20px 20px;
+  display: inline-block;
+}
+.doc-article div.topSection div.topCTA div.DetailedLinkWithImageMetro .textContent .RichText {
+  margin-bottom: 10px;
+}
+.doc-article div.topSection div.topCTA div.DetailedLinkWithImageMetro .textContent:first-child {
+  padding: 20px;
+  display: inline-block;
+}
+.doc-article div.topSection div.topCTA div.DetailedLinkWithImageMetro .linkText {
+  font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-weight: 600;
+  float: right;
+  padding: 0 32px 4px 0;
+  margin-top: 4px;
+  background: url('/Areas/VisualStudio/Themes/VStudio/Content/Images/arrowWhite.png?v=635832994465239679') no-repeat right center;
+}
+.doc-article #getStartedOverview * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.doc-article #getStartedOverview *:before,
+.doc-article #getStartedOverview *:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent {
+  display: inline-block;
+  margin: 15px 0 0 0;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage {
+  width: 19.38775510204082%;
+  float: left;
+  padding: 0 20px 25px 20px;
+  margin: 0 20px 20px 0;
+  position: relative;
+  background: #eee;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage img {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage .RichText {
+  padding-bottom: 20px;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage p {
+  margin: 0;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage .linklist {
+  display: inline-block;
+  margin: 10px 0 5px 0;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage .linklist a {
+  display: inline-block;
+  color: #04c;
+  margin: 0 0 5px 0;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage .link a {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.doc-article #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .listItems .DetailedLinkWithImage:nth-of-type(4n+4) {
+  margin-right: 0;
+}
+.doc-article #getStartedOverview .DetailedLinkWithImageList {
+  border: none;
+  margin: 10px 0 0 0;
+}
+.doc-article #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage h2 {
+  display: inline-block;
+  margin: 16px 0 20px 0;
+}
+.doc-article .IE8 #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList {
+  width: 102.0408163265306%;
+}
+.doc-article .IE8 #getStartedOverview #Fragment_BodyContent .DetailedLinkWithImageList .DetailedLinkWithImage {
+  width: 19%;
+}
+.doc-article a.arrowBlue,
+.doc-article .arrowBlue .link a,
+.doc-article a.arrowBlueVerticalAlign,
+.doc-article .arrowBlueVerticalAlign .link a {
+  display: inline-block;
+  background: url('Images/arrowBlue.png') no-repeat right top;
+  padding-right: 30px;
+  font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-weight: 600;
+}
+.doc-article a.arrowBlue,
+.doc-article .arrowBlue .link a {
+  margin: 5px 0 0 0;
+  color: #04c;
+}
+.doc-article a.arrowBlueVerticalAlign,
+.doc-article .arrowBlueVerticalAlign .link a {
+  float: left;
+  margin: 5px 19px 5px 0;
+}

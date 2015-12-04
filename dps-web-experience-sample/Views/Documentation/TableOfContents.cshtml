@@ -1,0 +1,27 @@
+﻿@model ACOM.DocumentationSample.Models.TableOfContentModel
+
+<script type="text/javascript">
+        // Apply TOC styles to nodes
+        $(document).ready(function () {
+            $(".TocNavigationVertical>ul").addClass("tocLevel1");
+            $(".TocNavigationVertical>ul>li>ul").addClass("tocLevel2");
+            $(".TocNavigationVertical>ul>li>a").addClass("normal");
+            $(".TocNavigationVertical>ul>li>ul>li>a").addClass("normal");
+
+            var arr = window.location.pathname.split('/');
+            var articleUrl = "../" + arr[arr.length - 2] + "/";
+            var active = $(".TocNavigationVertical>ul>li>ul>li>a[href='../@Model.ArticleSlug/']");
+
+            var activeSection = active.closest(".TocNavigationVertical>ul>li");
+
+            active.addClass("active").removeClass("normal");
+            active.parent().parent().css({ display: "block" });
+            activeSection.children("a").addClass("active").removeClass("normal");
+
+        });
+</script>
+<div class="leftNavigation">
+    <div class="TocNavigationVertical">
+        @Html.Raw(Model.Content)
+    </div>
+</div>

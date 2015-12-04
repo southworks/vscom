@@ -1,0 +1,693 @@
+﻿@using System.Web.Configuration;
+@{
+    string homeLinkText = WebConfigurationManager.AppSettings["partner"];
+}
+<!DOCTYPE html>
+
+
+<html lang="en" data-amd-enabled="true" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@ViewBag.Title</title>
+    @RenderSection("cp_head", false)
+
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/less")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/Combined")
+
+    <script type="text/javascript">
+        // Disabe all links outside 
+        $(document).ready(function () {
+            $('a').click(function (e) {
+                var comp = new RegExp(location.host);
+                if (!comp.test(e.target.href) && !e.target.href.startsWith("javascript:")) {
+                    alert ('External links has been disable for this POC environment.')
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body class="Chrome">
+    <div>
+
+
+        <input type="hidden" id="theme" value="visualstudio" />
+        <input type="hidden" id="isHeaderBleeding" value="true" />
+        <div id="ux-header" class="Chrome ltr">
+
+
+            <div class="upperBand">
+                <div class="upperBandContent">
+                    <div class="left">
+                        <div data-fragmentName="SiteLogoLink" id="Fragment_SiteLogoLink" xmlns="http://www.w3.org/1999/xhtml">
+                            <a href="/" title="Visual Studio" id="SiteLogoLink_43189_1" xmlns="http://www.w3.org/1999/xhtml">https://www.visualstudio.com</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div data-fragmentName="SubscriptionsLink" id="Fragment_SubscriptionsLink" xmlns="http://www.w3.org/1999/xhtml">
+                            <a href="https://msdn.microsoft.com/subscriptions/manage/hh442900" title="Click to access your MSDN subscription benefits" id="SubscriptionsLink_43189_3" xmlns="http://www.w3.org/1999/xhtml">MSDN Subscriptions</a>
+                        </div>
+                        <div id="signIn">
+
+                            <a class="scarabLink" href="https://app.vssps.visualstudio.com/profile/view?mkt=en-us" title="Sign in">Sign in</a>
+                        </div>
+
+
+
+                        <div data-fragmentName="SearchBox" id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml">
+                            <div class="SearchBox">
+                                <form id="HeaderSearchForm" name="HeaderSearchForm" method="get">
+                                    <input id="HeaderSearchTextBox" name="query" type="text" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(this, this.title, 'SearchBoxOnFocus')" onblur="return Epx.Controls.SearchBox.watermarkBlur(this, this.title, 'SearchBoxOnFocus')" />
+                                    <input id="RefinementId" name="refinement" type="hidden" value="198" />
+                                    <button id="HeaderSearchButton" value="" type="submit" class="header-search-button"></button>
+                                </form>
+                                <a tabindex="0" class="metroSearchButton" onclick="Epx.Controls.SearchBox.metroButtonClick(this)" title="Search here"></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lowerBand">
+                <div class="lowerBandContent">
+                    <div data-fragmentName="HeaderToc" id="Fragment_HeaderToc" xmlns="http://www.w3.org/1999/xhtml">
+                        <nav>
+                            <ul class="dev-navigation">
+                                <li class="nav-expander">
+                                    <a class="trigger" href="#">Products</a>
+                                    <div class="nav-exdpander-wrapper">
+                                        <div class="nav-expander-div">
+                                            <div>
+                                                <ul>
+                                                    <li class="nav-has-submenu default">
+                                                        <a href="#">
+                                                            <span>Top Products</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/vs-2015-product-editions" id="HeaderToc_1062_313" xmlns="http://www.w3.org/1999/xhtml">Visual Studio 2015 Products</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-enterprise-vs" id="HeaderToc_1062_294" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Enterprise</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-professional-with-msdn-vs" id="HeaderToc_1062_312" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Professional</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-community-vs" id="HeaderToc_1062_204" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Community</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/code-vs.aspx" id="HeaderToc_1062_279" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Code</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-team-services-vs" id="HeaderToc_1062_208" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Team Services</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/tfs-overview-vs" id="HeaderToc_1062_206" xmlns="http://www.w3.org/1999/xhtml">Team Foundation Server</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-has-submenu">
+                                                        <a href="#">
+                                                            <span>Other Products</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-test-professional-with-msdn-vs" id="HeaderToc_1062_302" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Test Professional</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/team-explorer-everywhere-vs" id="HeaderToc_1062_303" xmlns="http://www.w3.org/1999/xhtml">Team Explorer Everywhere</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/application-insights-vs" id="HeaderToc_1062_307" xmlns="http://www.w3.org/1999/xhtml">Application Insights</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/msdn-platforms-vs" id="HeaderToc_1062_306" xmlns="http://www.w3.org/1999/xhtml">MSDN Platforms</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-express-vs" id="HeaderToc_1062_300" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Express</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-has-submenu">
+                                                        <a href="#">
+                                                            <span>How to Buy</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/how-to-buy-vs" id="HeaderToc_1062_308" xmlns="http://www.w3.org/1999/xhtml">Visual Studio and MSDN Subscriptions</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-team-services-pricing-vs" id="HeaderToc_1062_310" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Team Services</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-has-submenu">
+                                                        <a href="#">
+                                                            <span>Compare</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs" id="HeaderToc_1062_305" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Offerings</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs" id="HeaderToc_1062_306" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Team Services Features</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-expander">
+                                    <a class="trigger" href="#">Features</a>
+                                    <div class="nav-exdpander-wrapper">
+                                        <div class="nav-expander-div">
+                                            <div>
+                                                <ul>
+                                                    <li class="nav-has-submenu default">
+                                                        <a href="#">
+                                                            <span>Application Development</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/mobile-app-development-vs" id="HeaderToc_1062_251" xmlns="http://www.w3.org/1999/xhtml">Mobile</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/modern-web-tooling-vs" id="HeaderToc_1062_249" xmlns="http://www.w3.org/1999/xhtml">Web</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/azure-tools-vs" id="HeaderToc_1062_293" xmlns="http://www.w3.org/1999/xhtml">Cloud</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/windows-apps-games-vs" id="HeaderToc_1062_248" xmlns="http://www.w3.org/1999/xhtml">Windows</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/office-tools-vs" id="HeaderToc_1062_250" xmlns="http://www.w3.org/1999/xhtml">Office</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/game-development-vs" id="HeaderToc_1062_311" xmlns="http://www.w3.org/1999/xhtml">Games</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/node-js-vs" id="HeaderToc_1062_276" xmlns="http://www.w3.org/1999/xhtml">Node.js</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/python-vs" id="HeaderToc_1062_312" xmlns="http://www.w3.org/1999/xhtml">Python</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/net-development-vs" id="HeaderToc_1062_317" xmlns="http://www.w3.org/1999/xhtml">.NET</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-has-submenu">
+                                                        <a href="#">
+                                                            <span>Lifecycle Management</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/alm-devops-vs" title="DevOps and Application Lifecycle Management" id="HeaderToc_1062_296" xmlns="http://www.w3.org/1999/xhtml">DevOps and ALM</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/agiletools-vs" id="HeaderToc_1062_293" xmlns="http://www.w3.org/1999/xhtml">Agile Software Development</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/version-control-vs" id="HeaderToc_1062_294" xmlns="http://www.w3.org/1999/xhtml">Version Control</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/java-vs" id="HeaderToc_1062_295" xmlns="http://www.w3.org/1999/xhtml">Tools for Java Teams</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/release-management-vs" id="HeaderToc_1062_314" xmlns="http://www.w3.org/1999/xhtml">Release Management</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/reporting-vs" id="HeaderToc_1062_315" xmlns="http://www.w3.org/1999/xhtml">Reporting</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/vso-cloud-load-testing-vs" id="HeaderToc_1062_297" xmlns="http://www.w3.org/1999/xhtml">Cloud-Based Load Testing</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/continuous-integration-vs" title="Continuous Integration" id="HeaderToc_1062_318" xmlns="http://www.w3.org/1999/xhtml">Continuous Integration</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/testing-tools-vs" id="HeaderToc_1062_298" xmlns="http://www.w3.org/1999/xhtml">Testing Tools</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-has-submenu">
+                                                        <a href="#">
+                                                            <span>Extend and Integrate</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/integrate" id="HeaderToc_1062_308" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/integrate/explore/explore-vso-vsi" id="HeaderToc_1062_309" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Team Services</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="http://go.microsoft.com/fwlink/?LinkId=691811" id="HeaderToc_1062_319" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                    <span style="font-size:11.0pt;font-family:'Calibri',sans-serif;" xmlns="">Visual Studio Code </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-expander">
+                                    <a class="trigger" href="#">Downloads</a>
+                                    <div class="nav-exdpander-wrapper">
+                                        <div class="nav-expander-div">
+                                            <div>
+                                                <ul>
+                                                    <li class="nav-has-submenu default">
+                                                        <a href="#">
+                                                            <span>Top Downloads</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://go.microsoft.com/fwlink/?LinkId=615437&amp;clcid=0x409" id="HeaderToc_1062_304" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Enterprise</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://go.microsoft.com/fwlink/?LinkId=532606&amp;clcid=0x409" id="HeaderToc_1062_254" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Community</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://code.visualstudio.com/download" id="HeaderToc_1062_280" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Code</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://go.microsoft.com/fwlink/?LinkId=615439&amp;clcid=0x409" id="HeaderToc_1062_256" xmlns="http://www.w3.org/1999/xhtml">Team Foundation Server</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" id="HeaderToc_1062_73" xmlns="http://www.w3.org/1999/xhtml">All Downloads</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-has-submenu">
+                                                        <a href="#">
+                                                            <span>Extensions and Integrations</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/cordova-vs" id="HeaderToc_1062_296" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Tools for Apache Cordova</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/unitytools-vs" id="HeaderToc_1062_297" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Tools for Unity</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://nodejstools.codeplex.com/" id="HeaderToc_1062_298" xmlns="http://www.w3.org/1999/xhtml">Node.js Tools for Visual Studio</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/python-vs" id="HeaderToc_1062_299" xmlns="http://www.w3.org/1999/xhtml">Python Tools for Visual Studio</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="http://blogs.msdn.com/b/dotnet/p/nugetpackages.aspx" id="HeaderToc_1062_300" xmlns="http://www.w3.org/1999/xhtml">.NET Nuget Packages</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://visualstudiogallery.msdn.microsoft.com/" id="HeaderToc_1062_301" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Gallery</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://www.visualstudio.com/features/vso-integrations-directory-vs" id="HeaderToc_1062_302" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Team Services Integrations</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-expander">
+                                    <a href="https://www.visualstudio.com/news/news-overview-vs">News</a>
+                                </li>
+                                <li class="nav-expander">
+                                    <a href="https://www.visualstudio.com/support/support-overview-vs">Support</a>
+                                </li>
+                                <li class="nav-expander">
+                                    <a href="http://marketplace.visualstudio.com">Marketplace</a>
+                                </li>
+                                <li class="nav-expander">
+                                    <a class="@(ViewBag.CurrentMenu== "Documentation"?"current ":"") trigger" href ="#">Documentation</a>
+                                    <div class="nav-exdpander-wrapper">
+                                        <div class="nav-expander-div">
+                                            <div>
+                                                <ul>
+                                                    <li class="nav-has-submenu default">
+                                                        <a href="#">
+                                                            <span>Documentation</span>
+                                                        </a>
+                                                        <div class="nav-submenu">
+                                                            <div class="ListOfLinkLists">
+                                                                <div class="listItems">
+
+                                                                    <div class="linkList">
+                                                                        <ul class="links">
+                                                                            <li>
+                                                                                <a href="https://msdn.microsoft.com/library/dd831853.aspx" id="HeaderToc_1062_273" xmlns="http://www.w3.org/1999/xhtml">Visual Studio on MSDN</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="/home/getstarted" id="HeaderToc_1062_272" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Team Services</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://code.visualstudio.com/docs" id="HeaderToc_1062_281" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Code</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div data-fragmentName="GetStartedLink" id="Fragment_GetStartedLink" xmlns="http://www.w3.org/1999/xhtml">
+                        <a href="https://www.visualstudio.com/products/visual-studio-dev-essentials-vs" title="Free Visual Studio" id="GetStartedLink_43189_6" xmlns="http://www.w3.org/1999/xhtml">
+                            <span lang="EN-US" style="line-height:107%;font-family:'Calibri',sans-serif;font-size:11pt;" xmlns="">Free Visual Studio</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            @RenderBody()
+        </div>
+
+        <input name="__RequestVerificationToken" type="hidden" value="v2ORdLyg0XX2r6S4tH_Njo01p_6F1mLgjBAzA19_vjnWMV1mOByVooba_4KlBDJrtEHiBnvOOmFvuiKXtjP2CpUx-F01" />
+        <input id="ratingSubmitUrl" type="hidden" value="https://www.visualstudio.com/en-us/feedback/add/150" />
+        <input id="isTopicRated" type="hidden" value="false" />
+        <input id="onePubTopicId" type="hidden" value="150" />
+
+        <div id="ux-footer" class="ltr">
+
+            <div id="footerSock" class="">
+                <div id="footerSockInner">
+                    <a name="feedback"></a>
+
+                    <div class="rating">
+                        <div id="ratingSection1">
+                            <div class="title">
+                                Was this page helpful?
+                            </div>
+                            <div class="description">
+                                Your feedback about this content is important.<br />Let us know what you think.
+                            </div>
+                            <div class="buttons">
+                                <button class="button" id="ratingYes" aria-label="Yes, this page was helpful">Yes</button>
+                                <button class="button" id="ratingNo" aria-label="No, this page was not helpful">No</button>
+                            </div>
+                            <input id="ratingValue" type="hidden" value="" />
+                        </div>
+                        <div id="ratingSection2">
+                            <div class="title left">
+                                Additional feedback?
+                            </div>
+                            <textarea id="ratingText" rows="6" cols="" maxlength="1500"></textarea>
+                            <div class="right">
+                                <div class="counter">
+                                    <span id="feedbackTextCounter">1500</span> characters remaining
+                                </div>
+                                <div class="buttons">
+                                    <button class="button" id="ratingSubmit" aria-label="Submit my additional feedback">Submit</button>
+                                    <button class="button" id="ratingSkipThis" aria-label="Skip additional feedback">Skip this</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ratingSection3">
+                            <div class="title">
+                                Thank you!
+                            </div>
+                            <div class="description">
+                                We appreciate your feedback.
+                            </div>
+                        </div>
+
+
+                        <div id="contentFeedbackQAContainer" style="display: none;"></div>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="footerContainer">
+                <div id="fourColumnFooter">
+                    <div data-fragmentName="Column1" id="Fragment_Column1" xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="ListOfLinkLists">
+                            <div class="listItems">
+
+                                <div class="linkList">
+                                    <div class="linkListDescription">
+                                        <div class="RichText">
+                                            <style xmlns="">
+                                                .linkList ul {
+                                                    margin: 0 !important;
+                                                }
+                                            </style>
+                                            <strong xmlns="">Visual Studio</strong>
+                                        </div>
+                                    </div>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="https://my.visualstudio.com/" id="Column1_1063_165" xmlns="http://www.w3.org/1999/xhtml">My Visual Studio</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://manage.visualstudio.com/" id="Column1_1063_166" xmlns="http://www.w3.org/1999/xhtml">Manage Visual Studio</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://marketplace.visualstudio.com" id="Column1_1063_167" xmlns="http://www.w3.org/1999/xhtml">Marketplace</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.visualstudio.com/integrate" id="Column1_1063_168" xmlns="http://www.w3.org/1999/xhtml">Integrate<span class="Apple-tab-span" style="white-space:pre;" xmlns=""></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-fragmentName="Column2" id="Fragment_Column2" xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="ListOfLinkLists">
+                            <div class="listItems">
+
+                                <div class="linkList">
+                                    <div class="linkListDescription">
+                                        <div class="RichText">
+                                            <strong xmlns="">Related Sites</strong>
+                                        </div>
+                                    </div>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="https://msdn.microsoft.com/library/vstudio" id="Column2_1063_180" xmlns="http://www.w3.org/1999/xhtml">Visual Studio documentation</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://msdn.microsoft.com/" id="Column2_1063_181" xmlns="http://www.w3.org/1999/xhtml">MSDN Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://channel9.msdn.com/" id="Column2_1063_182" xmlns="http://www.w3.org/1999/xhtml">Channel 9</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://azure.microsoft.com/" id="Column2_1063_250" xmlns="http://www.w3.org/1999/xhtml">Azure</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://blogs.msdn.com/b/visualstudio/" id="Column2_1063_251" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-fragmentName="Column3" id="Fragment_Column3" xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="ListOfLinkLists">
+                            <div class="listItems">
+
+                                <div class="linkList">
+                                    <div class="linkListDescription">
+                                        <div class="RichText">
+                                            <strong xmlns="">Products</strong>
+                                        </div>
+                                    </div>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="https://www.visualstudio.com/products/vs-2015-product-editions" target="_blank" id="Column3_1063_211" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.visualstudio.com/products/what-is-visual-studio-online-vs" target="_blank" id="Column3_1063_212" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Team Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://code.visualstudio.com/" target="_blank" id="Column3_1063_213" xmlns="http://www.w3.org/1999/xhtml">Visual Studio Code</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank" id="Column3_1063_218" xmlns="http://www.w3.org/1999/xhtml">Download</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs" id="Column3_1063_219" xmlns="http://www.w3.org/1999/xhtml">Compare</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.visualstudio.com/products/how-to-buy-vs" id="Column3_1063_252" xmlns="http://www.w3.org/1999/xhtml">How to Buy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-fragmentName="Column4" id="Fragment_Column4" xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="ListOfLinkLists">
+                            <div class="listItems">
+
+                                <div class="linkList">
+                                    <div class="linkListDescription">
+                                        <div class="RichText">
+                                            <strong xmlns="">Support</strong>
+                                        </div>
+                                    </div>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="https://www.visualstudio.com/support/support-overview-vs" target="_blank" id="Column4_1063_194" xmlns="http://www.w3.org/1999/xhtml">Get Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://connect.microsoft.com/visualstudio" target="_blank" id="Column4_1063_195" xmlns="http://www.w3.org/1999/xhtml">Submit a Bug</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://visualstudio.uservoice.com/forums/121579-visual-studio" target="_blank" id="Column4_1063_197" xmlns="http://www.w3.org/1999/xhtml">Submit an Idea</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://social.msdn.microsoft.com/forums/vstudio/en-us/home?category=visualstudio%2cvslanguages%2cvstfs%2cnetdevelopment%2cvsarch" target="_blank" id="Column4_1063_196" xmlns="http://www.w3.org/1999/xhtml">Forums</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="baseFooter">
+                    <div id="leftBaseFooter">
+
+                        <form class="selectLocale" id="selectLocaleForm" action="https://www.visualstudio.com/en-us/selectlocale-vs">
+                            <input type="hidden" name="fromPage" value="https%3a%2f%2fwww.visualstudio.com%2fen-us%2fget-started%2foverview-of-get-started-tasks-vs" />
+                            <a href="#" onclick="$('#selectLocaleForm').submit();return false;" title="Change your language">United States (English)</a>
+                        </form>
+
+
+                    </div>
+                    <div data-fragmentName="BaseFooterLinks" id="Fragment_BaseFooterLinks" xmlns="http://www.w3.org/1999/xhtml">
+
+                        <div class="linkList">
+                            <ul class="links horizontal">
+                                <li>
+                                    <a href="https://www.visualstudio.com/support/support-overview-vs" id="BaseFooterLinks_1063_144" xmlns="http://www.w3.org/1999/xhtml">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="https://go.microsoft.com/fwlink/?LinkID=264782&amp;clcid=0x409" id="BaseFooterLinks_1063_145" xmlns="http://www.w3.org/1999/xhtml">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="https://go.microsoft.com/fwlink/?LinkID=266231&amp;clcid=0x409" id="BaseFooterLinks_1063_146" xmlns="http://www.w3.org/1999/xhtml">Terms of use</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" id="BaseFooterLinks_1063_147" xmlns="http://www.w3.org/1999/xhtml">Trademarks</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="rightBaseFooter">
+                        © 2015 Microsoft
+                        <span class="microsoftLogo" title="Microsoft"></span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
